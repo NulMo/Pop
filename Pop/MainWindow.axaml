@@ -1,0 +1,68 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Pop.MainWindow"
+        Title="Pop!"
+		Width="600"
+		Height="400"
+		Background="SlateGray"
+		WindowStartupLocation="CenterScreen">
+	
+	<Grid RowDefinitions="Auto, *, Auto, Auto">
+
+		<!-- App Name at the Top -->
+		<TextBlock Text="Pop!"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,20"/>
+
+		<!-- Content Section: Big Text Box and Timer Label -->
+		<StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+
+			<!-- Label for the TextBox -->
+			<TextBlock Text="Enter the sentences you want to pop (Separated by a ;)"
+                       FontSize="16"
+                       Margin="0,0,0,10"/>
+
+			<!-- Big TextBox for Entering Sentences -->
+			<TextBox Name="SentencesTextBox"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"
+                     FontSize="16"
+                     Height="150"
+                     Watermark="Enter sentences here..."
+                     HorizontalAlignment="Stretch"/>
+
+			<!-- Label for the Timer Input -->
+			<TextBlock Text="How often do you want to pop? (In Minutes)"
+                       FontSize="16"
+                       Margin="0,20,0,10"/>
+
+			<!-- NumericUpDown for Timer Interval Input -->
+			<NumericUpDown Name="TimerIntervalInput"
+                           Minimum="1"
+                           Maximum="1440"
+                           Value="10"
+						   Increment="1"
+						   FormatString="0"
+					       ClipValueToMinMax="True"
+                           Width="150"
+                           FontSize="16"
+                           HorizontalAlignment="Left"/>
+		</StackPanel>
+
+		<!-- Submit Button -->
+		<Button Click="ClickHandler" Name="SubmitButton"
+                Content="Save"
+                FontSize="18"
+                Width="60"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Grid.Row="2"
+                Margin="0,20,0,10"/>
+
+	</Grid>
+</Window>
