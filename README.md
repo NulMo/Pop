@@ -44,6 +44,11 @@ Pop! is a desktop application built with Avalonia UI that helps you stay motivat
 5. Minimize the window to let it run in the background.
 6. Access the application from the system tray icon.
 
+## Screenshots
+![1](https://github.com/user-attachments/assets/0c4c5064-4a61-4d31-9ea7-45569cad05ee)
+![2](https://github.com/user-attachments/assets/40849e11-21f7-4510-8137-1b54bd20aa29)
+![3](https://github.com/user-attachments/assets/e42f0cbf-94ce-425f-abda-ddff70b2d55c)
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
