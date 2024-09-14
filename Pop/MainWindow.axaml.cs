@@ -25,6 +25,7 @@ namespace Pop
         }
         public async void ClickHandler(object sender, RoutedEventArgs args)
         {
+            sentences.Clear();
             if (SentencesTextBox.Text == null)
             {
                 var box = MessageBoxManager.GetMessageBoxStandard("Error!", "You should enter at least one sentence.");
